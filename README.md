@@ -58,4 +58,11 @@ Important: First, start the Docker daemon, in order to build and (optionally) pu
 ### Deploy the function
 `faas-cli deploy -f ./functions/hello-python.yml`
 
+### Or build, push and deploy in one single step:
+
+
+`faas-cli up -f ./functions/hello-python.yml`
+
+
+
 ## [Workshops](https://github.com/openfaas/workshop)
