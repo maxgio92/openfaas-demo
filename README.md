@@ -36,7 +36,7 @@ kubectl -n openfaas create secret generic basic-auth \
 
 `echo -n $PASSWORD | faas-cli login --password-stdin`
 
-## Deploy a [sample](https://blog.alexellis.io/first-faas-python-function/) Python function
+## Deploy a [sample](https://docs.openfaas.com/tutorials/first-python-function/) Python function
 
 ```
 pushd ./functions
