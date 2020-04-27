@@ -32,9 +32,11 @@ kubectl -n openfaas create secret generic basic-auth \
 
 ## Access to the [gateway](https://docs.openfaas.com/architecture/gateway/)
 
-`export OPENFAAS_URL=http://$(minikube ip):31112`
+```
+export OPENFAAS_URL=http://$(minikube ip):31112
 
-`echo -n $PASSWORD | faas-cli login --password-stdin`
+echo -n $PASSWORD | faas-cli login --password-stdin
+```
 
 ## Deploy a [sample](https://docs.openfaas.com/tutorials/first-python-function/) Python function
 
