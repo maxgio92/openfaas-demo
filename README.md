@@ -10,7 +10,7 @@
 
 ### Create the K8s namespaces
 
-`kubectl apply -f ./faas-netes/namespaces.yaml`
+`kubectl apply -f ./faas-netes/namespaces.yml`
 
 
 ### Create the password for the [gateway](https://docs.openfaas.com/architecture/gateway/)
