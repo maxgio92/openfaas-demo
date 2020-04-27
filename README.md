@@ -43,27 +43,26 @@ echo -n $PASSWORD | faas-cli login --password-stdin
 ```
 pushd ./functions
 faas-cli new --lang python hello-python
-popd
 ```
 
 ### Build the function
 
 Important: First, start the Docker daemon, in order to build and (optionally) publish the Docker image artifact
 
-`faas-cli build -f ./functions/hello-python.yml`
+`faas-cli build -f ./hello-python.yml`
 
 ### (optional) Publish the function
 (optional) If configured a registry repo URL (i.e. in ./functions/hello-python.yml):
 
-`faas-cli push -f ./functions/hello-python.yml`
+`faas-cli push -f ./hello-python.yml`
 
 ### Deploy the function
-`faas-cli deploy -f ./functions/hello-python.yml`
+`faas-cli deploy -f ./hello-python.yml`
 
 ### Or build, push and deploy in one single step:
 
 
-`faas-cli up -f ./functions/hello-python.yml`
+`faas-cli up -f ./hello-python.yml`
 
 
 
